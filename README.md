@@ -25,11 +25,10 @@
 
 2) Set the paths of the training and testing datasets in the script "main.py" (i.e. modify train_dir, test_dir, and test_dir2 to point to your datasets).
 
-3) Set the path to where you want the trained network to be saved, by modifying net_name.
 
-4) Run main.py
+3) Run main.py
 
-5) The predicted results of the vehicle's position (given in the form of (x, y)) and the ground truth values will be saved in a .mat file.
+4) The predicted results of the vehicle's position (given in the form of (x, y)) and the ground truth values will be saved in a .mat file.
 
 # Data Structure:
 The script assumes a training and testing datasets structured as a directory of subdirectories, as follows:
