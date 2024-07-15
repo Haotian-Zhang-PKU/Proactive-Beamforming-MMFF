@@ -25,8 +25,7 @@
 
 2) Set the paths of the training and testing datasets in the script "main.py" (i.e. modify train_dir, test_dir, and test_dir2 to point to your datasets).
 
-
-3) Run main.py
+3) Run Main.py to get the predicted results of MMFF-Net. Run Main_Uni_CSI.py to get the predicted results of the Uni-CSI scheme. Run Main_Uni_Image.py to get the predicted results of the Uni-Image scheme. Run Main_Uni_DP.py to get the predicted results of the Uni-Depth Map scheme. 
 
 4) The predicted results of the vehicle's position (given in the form of (x, y)) and the ground truth values will be saved in a .mat file.
 
