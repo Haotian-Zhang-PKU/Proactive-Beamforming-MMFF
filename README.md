@@ -23,7 +23,7 @@
 
 1) Ensure there is a folder named Training_dataset for network training; and a folder named Testing_dataset_Normal_Weather, which is used for network testing at normal weather conditions; and a folder named Testing_dataset_Adverse_Weather, which is used for network testing at adverse weather conditions. (For more information on the data structure, see the next section).
 
-2) Set the paths of the training and testing datasets in the script "main.py" (i.e. modify train_dir and val_dir to point to your datasets).
+2) Set the paths of the training and testing datasets in the script "main.py" (i.e. modify train_dir, test_dir, and test_dir2 to point to your datasets).
 
 3) Set the path to where you want the trained network to be saved, by modifying net_name.
 
@@ -44,7 +44,7 @@ training_data
   .
   |- xN_yN
  ```
-The name of each sub directory is the coordinate of the vehicle at the next time instance, which is the label of MMFF-Net. The contents of the subdirectories are the RGB images, depth maps, and sub-6 GHz channel state information collected by RSU at a certain time instant and the time instant. The contents of the subdirectories are inputs for MMFF-Net.
+The name of each sub directory is the coordinate of the vehicle's position at the next time instance, which is the label for training the MMFF-Net. The contents of the subdirectories are the RGB images, depth maps, and sub-6 GHz channel state information collected by RSU at a certain time instant and the time instant. The contents of the subdirectories are inputs for MMFF-Net.
 
 It is noted that there may be some differences in the results of different training processes. 
 
