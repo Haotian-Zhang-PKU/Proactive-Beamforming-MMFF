@@ -49,7 +49,26 @@ training_data
   .
   |- xN_yN
  ```
-The name of each sub directory is the coordinate of the vehicle's position at the next time instance, which is the label for training the MMFF-Net. The contents of the subdirectories are the RGB images (e.g., cam_2_27.0268_10.png), depth maps (e.g., cam_2_27.0268_depth_10.mat), and sub-6 GHz channel state information (cam_2_27.0268_10_sub6.mat) collected by RSU at a certain time instant and the time instant. The contents of the subdirectories are inputs for MMFF-Net.
+The above dataset structure is applicable to three schemes: MMFF-Net, Uni-Image, and Uni-Depth Map. The name of each sub directory is the coordinate of the vehicle's position at the next time instance, which is the label for training the MMFF-Net. The contents of the subdirectories are the RGB images (e.g., cam_2_27.0268_10.png), depth maps (e.g., cam_2_27.0268_depth_10.mat), and sub-6 GHz CSI (cam_2_27.0268_10_sub6.mat) collected by RSU at a certain time instant and the time instant. The contents of the subdirectories are inputs for MMFF-Net.
+
+```
+training_data
+  |
+  |- Δy1_Δx1_y1
+  |--cam_2_27.0268_10.png
+  |--cam_2_27.0268_10_sub6.mat
+  |--cam_2_27.0268_depth_10.mat
+  |--cam_2_27.1166_10.png
+  |--cam_2_27.1166_10_sub6.mat
+  |--cam_2_27.1166_depth_10.mat
+  |- Δy2_Δx2_y2
+  |- Δy3_Δx3_y3
+  .
+  .
+  .
+  |- ΔyN_ΔxN_yN
+ ```
+The above dataset structure is applicable to Uni-CSI scheme.  Due to the difficulty in learning the mapping relationship between CSI and vehicle position coordinates by the network, in order to simplify the task difficulty, the Uni CSI scheme only predicts the displacement of the vehicle on the y-axis. Therefore, deltax is always 0. The third value is the absolute value of the y-axis coordinate of the vehicle position, which facilitates sorting of the predicted displacement values output by the network. The first two values of each sub directory is the displacement of the x and y coordinates of the vehicle relative to the starting point, which is the label for training the Uni-CSI scheme. The third value is the absolute value of the y-axis coordinate of the vehicle position, which facilitates sorting of the predicted displacement values output by the network. Note that due to the difficulty in learning the mapping relationship between sub-6 GHz CSI and vehicle position coordinates by the network, the Uni-CSI scheme only predicts the displacement of the vehicle on the y-axis to simplify the task difficulty. The contents of the subdirectories are the RGB images (e.g., cam_2_27.0268_10.png), depth maps (e.g., cam_2_27.0268_depth_10.mat), and sub-6 GHz channel state information (cam_2_27.0268_10_sub6.mat) collected by RSU at a certain time instant and the time instant.
 
 It is noted that there may be some differences in the results of different training processes. 
 
