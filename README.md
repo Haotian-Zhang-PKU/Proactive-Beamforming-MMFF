@@ -21,7 +21,7 @@
 
 # Running the code:
 
-1) Ensure there is a folder named Training_dataset for network training; and a folder named Testing_dataset_normal_weather, which is used for network testing at normal weather conditions; and a folder named Testing_dataset_adverse_weather, which is used for network testing at adverse weather conditions. (For more information on the data structure, see the next section).
+1) Ensure that you have the dataset required for all the schemes. (For more information on the data structure, see the next section).
 
 2) Set the paths of the training and testing datasets in the script "main.py" (i.e. modify train_dir, test_dir, and test_dir2 to point to your datasets).
 
