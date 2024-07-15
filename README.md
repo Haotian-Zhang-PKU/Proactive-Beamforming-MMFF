@@ -37,6 +37,12 @@ The script assumes a training and testing datasets structured as a directory of 
 training_data
   |
   |- x1_y1
+  |--cam_2_27.0268_10.png
+  |--cam_2_27.0268_10_sub6.mat
+  |--cam_2_27.0268_depth_10.mat
+  |--cam_2_27.1166_10.png
+  |--cam_2_27.1166_10_sub6.mat
+  |--cam_2_27.1166_depth_10.mat
   |- x2_y2
   |- x3_y3
   .
@@ -44,7 +50,7 @@ training_data
   .
   |- xN_yN
  ```
-The name of each sub directory is the coordinate of the vehicle's position at the next time instance, which is the label for training the MMFF-Net. The contents of the subdirectories are the RGB images, depth maps, and sub-6 GHz channel state information collected by RSU at a certain time instant and the time instant. The contents of the subdirectories are inputs for MMFF-Net.
+The name of each sub directory is the coordinate of the vehicle's position at the next time instance, which is the label for training the MMFF-Net. The contents of the subdirectories are the RGB images (e.g., cam_2_27.0268_10.png), depth maps (e.g., cam_2_27.0268_depth_10.mat), and sub-6 GHz channel state information (cam_2_27.0268_10_sub6.mat) collected by RSU at a certain time instant and the time instant. The contents of the subdirectories are inputs for MMFF-Net.
 
 It is noted that there may be some differences in the results of different training processes. 
 
