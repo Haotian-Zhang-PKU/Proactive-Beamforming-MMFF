@@ -30,7 +30,7 @@
 4) The predicted results of the vehicle's position (given in the form of (x, y)) and the ground truth values will be saved in a .mat file.
 
 # Data Structure:
-The script assumes a training and testing datasets structured as a directory of subdirectories, as follows:
+The script assumes training and testing datasets structured as a directory of subdirectories, as follows:
 ```
 training_data
   |
