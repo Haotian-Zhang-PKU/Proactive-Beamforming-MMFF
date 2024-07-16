@@ -71,4 +71,4 @@ The above dataset structure is applicable to Uni-CSI scheme.  Due to the difficu
 
 It is noted that there may be some differences in the results of different training processes. 
 
-Acknowledgement: The code for this study was modified based on the source code provided by Muhammad Alrabeiah, Andrew Hredzak, and Ahmed Alkhateeb for their research: Millimeter Wave Base Stations with Cameras: Vision-Aided Beam and Blockage Prediction. 
+__Acknowledgement__: The code for this study was modified based on the source code provided by Muhammad Alrabeiah, Andrew Hredzak, and Ahmed Alkhateeb for their research: Millimeter Wave Base Stations with Cameras: Vision-Aided Beam and Blockage Prediction. 
