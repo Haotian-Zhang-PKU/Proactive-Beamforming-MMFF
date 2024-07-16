@@ -2,9 +2,9 @@
 
  This simulation code package is mainly used to reproduce the results of the following paper [1]:
 
- [1] H. Zhang, S. Gao, X. Cheng, and L. Yang, "Integrated Sensing and Communications towards Proactive Beamforming in mmWave V2I via Multi-Modal Feature Fusion (MMFF)," IEEE Trans. Wireless Commun., early access, doi: 10.1109/TWC.2024.3401686.
+ __[1] H. Zhang, S. Gao, X. Cheng, and L. Yang, "Integrated Sensing and Communications towards Proactive Beamforming in mmWave V2I via Multi-Modal Feature Fusion (MMFF)," IEEE Trans. Wireless Commun., early access, doi: 10.1109/TWC.2024.3401686.__
 
- If you use this simulation code package in any way, please cite the original paper [1] above.
+ __If you use this simulation code package in any way, please cite the original paper [1] above.__
 
  Copyright reserved by the Pervasive Connectivity and Networked Intelligence Laboratory (led by Dr. Xiang Cheng), School of Electronics, Peking University, Beijing 100871, China. 
 
